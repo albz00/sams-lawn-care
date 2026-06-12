@@ -33,7 +33,7 @@
     }
   })
 
-  const phone = '(304) 667-4480'
+  const phone = '304-667-4480'
   const phoneHref = 'tel:+13046674480'
   const clientLoginHref =
     'https://clienthub.getjobber.com/client_hubs/a87c84a8-eb21-41a2-899f-d85c592e6d59/login/new?source=share_login'
@@ -171,7 +171,7 @@
   })
 </script>
 
-<div class="min-h-screen bg-white font-sans text-stone-900">
+<div class="min-h-screen w-full max-w-full overflow-x-clip bg-white font-sans text-stone-900">
 
   <!-- ─── Header ─────────────────────────────────────────────────────────── -->
   <header
@@ -220,18 +220,19 @@
         </a>
         <a
           href={phoneHref}
-          class="btn-lift inline-flex h-12 items-center rounded-full px-5 text-sm font-semibold shadow-xl transition-all
+          class="btn-lift inline-flex h-12 items-center gap-2 rounded-full px-5 text-sm font-semibold shadow-xl transition-all
             {headerScrolled
               ? 'bg-moss-700 text-white hover:bg-moss-800 hover:shadow-2xl hover:-translate-y-0.5'
               : 'border border-white/22 bg-white/15 text-white backdrop-blur-sm hover:border-white/35 hover:bg-white/25 hover:shadow-2xl hover:-translate-y-0.5'}"
         >
-          {phone}
+          <span class="text-base leading-none" aria-hidden="true">#</span>
+          <span>{phone}</span>
         </a>
       </div>
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" class="overflow-x-clip">
 
     <!-- ─── Hero: full-bleed background ──────────────────────────────────── -->
     <section class="relative flex min-h-screen items-end overflow-hidden">
@@ -276,7 +277,7 @@
             <img
               src={heroServiceAreaMap}
               alt="West Virginia county service area map"
-              class="hero-service-map h-auto w-full max-w-[380px]"
+              class="h-auto w-full max-w-[380px]"
               loading="lazy"
             />
           </div>
@@ -285,7 +286,7 @@
     </section>
 
     <!-- ─── Reviews ───────────────────────────────────────────────────── -->
-    <section id="reviews" class="relative scroll-mt-24 overflow-visible bg-gradient-to-b from-moss-950 to-[#0f190c]">
+    <section id="reviews" class="relative scroll-mt-24 overflow-x-clip bg-gradient-to-b from-moss-950 to-[#0f190c]">
       <div class="testimonial-grass pointer-events-none absolute inset-x-0 top-0" aria-hidden="true">
         <div class="testimonial-grass-base"></div>
         <div class="testimonial-grass-layer testimonial-grass-back">
@@ -296,16 +297,18 @@
             ></span>
           {/each}
         </div>
-        <div class="testimonial-mower-run">
-          <div class="testimonial-mower-bump">
-            <img
-              src={testimonialMowerImage}
-              alt=""
-              aria-hidden="true"
-              class="testimonial-mower"
-              loading="lazy"
-              decoding="async"
-            />
+        <div class="testimonial-mower-clip">
+          <div class="testimonial-mower-run">
+            <div class="testimonial-mower-bump">
+              <img
+                src={testimonialMowerImage}
+                alt=""
+                aria-hidden="true"
+                class="testimonial-mower"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
         </div>
         <div class="testimonial-grass-layer testimonial-grass-front">
@@ -425,8 +428,8 @@
                     class="reveal group py-6 transition-all first:pt-0 last:pb-0 hover:translate-x-1"
                   >
                     <div class="flex items-start gap-4">
-                      <span class="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-moss-100 text-moss-700 transition-colors group-hover:bg-moss-200">
-                        <svg viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+                      <span class="mt-0.5 shrink-0 text-moss-600 transition-colors group-hover:text-moss-800">
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7" aria-hidden="true">
                           <path
                             fill-rule="evenodd"
                             d="M16.704 5.293a1 1 0 0 1 .003 1.414l-7.35 7.38a1 1 0 0 1-1.42-.003l-3.643-3.676a1 1 0 0 1 1.42-1.407l2.934 2.962 6.643-6.67a1 1 0 0 1 1.413 0Z"
@@ -939,29 +942,26 @@
 </div>
 
 <style>
-  .hero-service-map {
-    filter: drop-shadow(0 0 12px rgba(193, 255, 201, 0.14));
-    animation: hero-map-glow 4.8s ease-in-out infinite;
-    will-change: filter, transform;
-  }
-
-  @keyframes hero-map-glow {
-    0%,
-    100% {
-      filter: drop-shadow(0 0 12px rgba(193, 255, 201, 0.14));
-      transform: translateY(0);
-    }
-
-    50% {
-      filter: drop-shadow(0 0 20px rgba(193, 255, 201, 0.24));
-      transform: translateY(-1px);
-    }
-  }
-
   .testimonial-grass {
     top: -86px;
     z-index: 20;
     height: 98px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+
+  .testimonial-mower-clip {
+    position: absolute;
+    inset-inline: 0;
+    bottom: -10px;
+    height: 180px;
+    z-index: 2;
+    overflow-x: clip;
+    overflow-y: visible;
+    container-type: inline-size;
+    pointer-events: none;
   }
 
   .testimonial-grass-base {
@@ -999,7 +999,7 @@
   .testimonial-mower-run {
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: 0;
     z-index: 2;
     animation: testimonial-mower-drive 18s linear infinite;
   }
@@ -1057,7 +1057,7 @@
     }
 
     100% {
-      transform: translateX(calc(100vw + 140%));
+      transform: translateX(calc(100cqw + 140%));
     }
   }
 
