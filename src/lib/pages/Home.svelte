@@ -74,10 +74,14 @@
 <!-- Hero: full-bleed background -->
 <section class="relative flex min-h-screen items-center overflow-hidden">
   {#each heroBackgrounds as image, i}
-    <div
-      class="absolute inset-0 bg-cover bg-center transition-opacity duration-[1500ms] ease-in-out {i === heroImageIndex ? 'opacity-100' : 'opacity-0'}"
-      style="background-image: url('{image}')"
-    ></div>
+    <img
+      src={image}
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ease-in-out {i === heroImageIndex ? 'opacity-100' : 'opacity-0'}"
+      loading={i === 0 ? 'eager' : 'lazy'}
+      fetchpriority={i === 0 ? 'high' : 'low'}
+      aria-hidden="true"
+    />
   {/each}
   <div class="absolute inset-0 bg-gradient-to-t from-black/94 via-black/72 to-black/55"></div>
   <div class="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/45 via-black/20 to-transparent"></div>

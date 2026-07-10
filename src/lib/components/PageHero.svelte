@@ -3,7 +3,14 @@
 </script>
 
 <section class="relative flex min-h-[52vh] items-end overflow-hidden pt-32">
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{image}')"></div>
+  <img
+    src={image}
+    alt=""
+    class="absolute inset-0 h-full w-full object-cover"
+    loading="eager"
+    fetchpriority="high"
+    aria-hidden="true"
+  />
   <div class="absolute inset-0 bg-gradient-to-t from-black/94 via-black/72 to-black/55"></div>
   <div class="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/45 via-black/20 to-transparent"></div>
 
