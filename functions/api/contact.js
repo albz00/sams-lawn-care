@@ -1,4 +1,4 @@
-const BUSINESS_EMAIL = 'alzimmr1@gmail.com'
+const BUSINESS_EMAIL = 'samslawncare7267@gmail.com'
 const FROM_EMAIL = 'Sams Lawn Care <info@hostverna.co>'
 
 function json(body, status = 200) {

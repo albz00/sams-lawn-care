@@ -157,10 +157,7 @@
           {/key}
           <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/20"></div>
           <div class="absolute inset-x-0 bottom-0 p-8 md:p-10">
-            <p class="max-w-sm text-2xl font-bold leading-tight text-white md:text-3xl">
-              {serviceShowcase[servicesImageIndex].caption}
-            </p>
-            <div class="mt-6 flex flex-wrap items-center gap-3">
+            <div class="flex flex-wrap items-center gap-3">
               <button
                 type="button"
                 class="rounded-full border border-white/22 bg-black/35 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-white uppercase transition-colors hover:bg-black/50"

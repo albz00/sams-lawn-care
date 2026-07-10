@@ -27,12 +27,6 @@
               {i === 0 ? 'aspect-[4/3] lg:aspect-auto lg:h-full' : 'aspect-[4/3]'}"
             loading="lazy"
           />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-100 transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-100"></div>
-          <figcaption
-            class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-0 p-5 text-sm font-semibold text-white opacity-100 transition-all duration-500 sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
-          >
-            {item.caption}
-          </figcaption>
         </figure>
       {/each}
     </div>
