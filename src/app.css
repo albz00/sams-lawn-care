@@ -36,6 +36,13 @@ body {
   max-width: 100%;
 }
 
+input,
+select,
+textarea {
+  min-width: 0;
+  max-width: 100%;
+}
+
 /* ── Scroll reveal ───────────────────────────────────────────── */
 
 .reveal {

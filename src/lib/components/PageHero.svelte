@@ -18,7 +18,7 @@
     {#if eyebrow}
       <p class="text-sm font-bold tracking-[0.22em] text-moss-300 uppercase">{eyebrow}</p>
     {/if}
-    <h1 class="mt-4 max-w-3xl text-5xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-6xl">
+    <h1 class="mt-4 max-w-3xl text-4xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-6xl">
       {title}
     </h1>
     {#if description}

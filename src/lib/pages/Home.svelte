@@ -90,7 +90,7 @@
     <div class="grid items-end gap-10 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-12">
       <div class="max-w-3xl">
         <h1
-          class="mt-6 text-6xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-7xl lg:text-8xl"
+          class="mt-6 text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-7xl lg:text-8xl"
         >
           A lawn you&rsquo;ll love<br />coming home to.
         </h1>
@@ -419,7 +419,7 @@
       <!-- Right: contact info + form -->
       <div use:reveal={{ delay: 130 }} class="reveal flex flex-col gap-5">
         <div class="divide-y divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 shadow-lg shadow-stone-300/30">
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Phone</p>
             <a
               href={phoneHref}
@@ -428,7 +428,7 @@
               {phone}
             </a>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Email</p>
             <a
               href="mailto:{email}"
@@ -437,13 +437,13 @@
               {email}
             </a>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Area</p>
             <p class="text-base font-semibold">
               Lewisburg, WV, Greenbrier Valley &amp; surrounding areas
             </p>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Facebook</p>
             <a
               href={facebookUrl}

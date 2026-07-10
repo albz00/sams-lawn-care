@@ -13,13 +13,13 @@
 />
 
 <section class="bg-white py-20 md:py-28">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="grid gap-16 lg:grid-cols-2 lg:items-start">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
 
       <!-- Left: contact info + photo -->
       <div use:reveal class="reveal lg:sticky lg:top-28 self-start">
         <div class="divide-y divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 shadow-lg shadow-stone-300/30">
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Phone</p>
             <a
               href={phoneHref}
@@ -28,7 +28,7 @@
               {phone}
             </a>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Email</p>
             <a
               href="mailto:{email}"
@@ -37,13 +37,13 @@
               {email}
             </a>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Area</p>
             <p class="text-base font-semibold">
               Lewisburg, WV, Greenbrier Valley &amp; surrounding areas
             </p>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-start gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-start sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase pt-0.5">Hours</p>
             <div class="space-y-1">
               {#each hours as { day, time }}
@@ -54,7 +54,7 @@
               {/each}
             </div>
           </div>
-          <div class="grid grid-cols-[5.5rem_1fr] items-center gap-4 px-6 py-5">
+          <div class="grid grid-cols-1 gap-1 px-5 py-5 sm:grid-cols-[5.5rem_minmax(0,1fr)] sm:items-center sm:gap-4 sm:px-6">
             <p class="text-xs font-bold tracking-[0.18em] text-stone-400 uppercase">Facebook</p>
             <a
               href={facebookUrl}

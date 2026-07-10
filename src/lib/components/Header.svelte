@@ -39,9 +39,9 @@
   class="fixed top-0 z-50 w-full transition-all duration-500
     {solid ? 'bg-white/95 shadow-sm backdrop-blur-md border-b border-stone-200' : ''}"
 >
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-5 sm:px-6 sm:py-6">
     <a href="/" class="group flex items-center gap-4 transition-transform duration-300 hover:-translate-y-0.5">
-      <img src={logo} alt="Sams Lawn Care logo" class="h-12 w-auto transition-all duration-300 group-hover:scale-[1.03]" />
+      <img src={logo} alt="Sams Lawn Care logo" class="h-10 w-auto transition-all duration-300 group-hover:scale-[1.03] sm:h-12" />
       <span
         class="hidden text-base font-extrabold tracking-tight whitespace-nowrap uppercase transition-colors sm:inline md:text-lg
           {solid ? 'text-stone-900' : 'text-white'}"
@@ -70,7 +70,7 @@
       {/each}
     </nav>
 
-    <div class="flex items-center gap-2.5 md:gap-3">
+    <div class="flex shrink-0 items-center gap-2 md:gap-3">
       <a
         href={clientLoginHref}
         target="_blank"
@@ -84,7 +84,7 @@
       </a>
       <a
         href={phoneHref}
-        class="btn-lift inline-flex h-12 items-center gap-2 rounded-full px-5 text-sm font-semibold whitespace-nowrap shadow-xl transition-all
+        class="btn-lift inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full p-0 text-sm font-semibold whitespace-nowrap shadow-xl transition-all sm:h-12 sm:w-auto sm:px-5
           {solid
             ? 'bg-moss-700 text-white hover:bg-moss-800 hover:shadow-2xl hover:-translate-y-0.5'
             : 'border border-white/22 bg-white/15 text-white backdrop-blur-sm hover:border-white/35 hover:bg-white/25 hover:shadow-2xl hover:-translate-y-0.5'}"
@@ -96,7 +96,7 @@
             clip-rule="evenodd"
           />
         </svg>
-        <span>{phone}</span>
+        <span class="hidden sm:inline">{phone}</span>
       </a>
 
       <button
