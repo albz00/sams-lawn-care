@@ -1,0 +1,27 @@
+# Sams Lawn Care
+
+> Locally owned lawn care and landscaping company serving Lewisburg, West Virginia and the surrounding Greenbrier Valley. Services include mowing, trimming and edging, landscaping, mulching, snow removal, leaf removal, and field mowing for residential and commercial properties.
+
+- Location: Lewisburg, WV (serves the Greenbrier Valley, Ronceverte, White Sulphur Springs, and Fairlea)
+- Phone: (304) 667-4480
+- Email: Samslawncare7267@gmail.com
+- Hours: Monday–Saturday, 7 AM – 7 PM (closed Sunday)
+
+## Pages
+
+- [Home](https://samslawncarewv.com/): Overview of Sams Lawn Care, service highlights, and service area across the Greenbrier Valley.
+- [Services](https://samslawncarewv.com/services): Full list of services: mowing, trimming & edging, landscaping, mulching, snow removal, leaf removal, and field mowing.
+- [Reviews](https://samslawncarewv.com/reviews): Verified five-star customer reviews from homeowners and businesses across Lewisburg, WV.
+- [Our Work](https://samslawncarewv.com/work): Photo gallery of completed mowing, landscaping, mulching, and snow removal projects.
+- [About](https://samslawncarewv.com/about): About Sams Lawn Care, a local, family-run lawn and landscaping crew based in Lewisburg, WV.
+- [Contact](https://samslawncarewv.com/contact): Phone, email, hours, and free-quote request form for Sams Lawn Care.
+
+## Services
+
+- Mowing — weekly and bi-weekly routes for residential and commercial properties
+- Trimming & Edging — crisp edges along walkways, driveways, and beds
+- Landscaping — bed design, planting, and seasonal cleanups
+- Mulching — fresh mulch delivery and installation
+- Snow Removal — driveway/walkway clearing and de-icing
+- Leaf Removal — truck-mounted vacuum fall cleanups
+- Field Mowing — large-area and hillside mowing with heavy-duty equipment
